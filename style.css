@@ -90,6 +90,8 @@ header {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  background: var(--header-bg);
+  color: var(--text-color);
 }
 
 header h1 {
@@ -220,3 +222,37 @@ form button:hover {
     padding: 15px;
   }
 }
+.btn {
+  display: inline-block;
+  background: #2a5298;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  background: var(--primary-color);
+}
+
+.btn:hover {
+  background: #1e3c72;
+}
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --primary-color: #2a5298;
+  --header-bg: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --primary-color: #4a90e2;
+  --header-bg: #111;
+}
+
